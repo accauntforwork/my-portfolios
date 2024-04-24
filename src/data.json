@@ -1,0 +1,58 @@
+[
+  {
+    "top": true,
+    "projectName": "Intertaiment web App",
+    "imgLink": "/react.png",
+    "githubLink": "https://github.com/accauntforwork/imtihon-final",
+    "liveLink": "https://imtihon-final.vercel.app/",
+    "technologies": ["react", "tailwind", "daisyUI", "javascript"]
+  },
+  {
+    "top": true,
+    "projectName": "Math game",
+    "imgLink": "/js.jpg",
+    "githubLink": "https://github.com/accauntforwork/mathGame",
+    "liveLink": "https://math-game-gray.vercel.app/",
+    "technologies": ["javascript", "html", "css"]
+  },
+  {
+    "top": false,
+    "projectName": "Currency exchange",
+    "imgLink": "/react.png",
+    "githubLink": "https://github.com/accauntforwork/currencyFinal",
+    "liveLink": "https://currency-final.vercel.app/",
+    "technologies": ["react", "tailwind", "MUI", "apexchart", "typescript"]
+  },
+  {
+    "top": true,
+    "projectName": "Audiophile | eCommerce",
+    "imgLink": "/react.png",
+    "githubLink": "https://github.com/accauntforwork/audiophile-with-auth-v2",
+    "liveLink": "https://audiophile-with-auth-v2.vercel.app/",
+    "technologies": ["react", "tailwind", "javascript"]
+  },
+  {
+    "top": false,
+    "projectName": "Pomodoro timer",
+    "imgLink": "/react.png",
+    "githubLink": "https://github.com/accauntforwork/pomodoroReact",
+    "liveLink": "https://pomodoro-react-sage.vercel.app/",
+    "technologies": ["react", "tailwind", "daisyUI", "redux"]
+  },
+  {
+    "top": true,
+    "projectName": "Comfy store | eCommerce",
+    "imgLink": "/react.png",
+    "githubLink": "https://github.com/accauntforwork/ecommerce",
+    "liveLink": "https://ecommerce-lac-tau-31.vercel.app/",
+    "technologies": ["react", "tailwind"]
+  },
+  {
+    "top": true,
+    "projectName": "Countries web site",
+    "imgLink": "/js.jpg",
+    "githubLink": "https://github.com/accauntforwork/Countries-API-by-Muhammadqodir",
+    "liveLink": "https://countries-api-by-muhammadqodir.vercel.app/",
+    "technologies": ["javascript", "html", "css"]
+  }
+]
