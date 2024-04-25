@@ -27,7 +27,7 @@ function App() {
         setFilteredData(
           data.sort((a, b) => b.projectName.localeCompare(a.projectName))
         );
-        console.log(filteredData);
+        // console.log(filteredData);
         break;
       case "Reset":
         setFilteredData(data);
@@ -54,6 +54,10 @@ function App() {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentData = filteredData.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
 
   return (
     <div className="container mx-auto p-4">
