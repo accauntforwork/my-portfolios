@@ -5,7 +5,8 @@
     "imgLink": "/react.png",
     "githubLink": "https://github.com/accauntforwork/imtihon-final",
     "liveLink": "https://imtihon-final.vercel.app/",
-    "technologies": ["react", "tailwind", "daisyUI", "javascript"]
+    "technologies": ["react", "tailwind", "daisyUI", "javascript"],
+    "newest": true
   },
   {
     "top": true,
@@ -21,7 +22,8 @@
     "imgLink": "/react.png",
     "githubLink": "https://github.com/accauntforwork/currencyFinal",
     "liveLink": "https://currency-final.vercel.app/",
-    "technologies": ["react", "tailwind", "MUI", "apexchart", "typescript"]
+    "technologies": ["react", "tailwind", "MUI", "apexchart", "typescript"],
+    "newest": true
   },
   {
     "top": true,
@@ -29,7 +31,8 @@
     "imgLink": "/react.png",
     "githubLink": "https://github.com/accauntforwork/audiophile-with-auth-v2",
     "liveLink": "https://audiophile-with-auth-v2.vercel.app/",
-    "technologies": ["react", "tailwind", "javascript"]
+    "technologies": ["react", "tailwind", "javascript"],
+    "newest": true
   },
   {
     "top": false,
