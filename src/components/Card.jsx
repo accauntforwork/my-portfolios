@@ -66,8 +66,8 @@ function Card(props) {
         {technologies.map((el, index) => (
           <span
             key={index}
-            className={`px-4 pb-1 rounded-lg bg-blue-500 text-white hover:bg-blue-700 cursor-pointer ${
-              loading && "skeleton text-transparent"
+            className={`px-4 pb-1 rounded-lg  hover:bg-blue-700 cursor-pointer ${
+              loading ? "skeleton text-transparent" : "bg-blue-500 text-white"
             }`}
           >
             {el}

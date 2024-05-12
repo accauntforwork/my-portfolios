@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "./components/Card";
 import Button from "./components/Button";
 import data from "./data.json";
 import Loading from "./components/Loading";
+import Slider from "./components/Slider";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
+
   const [filteredData, setFilteredData] = useState(data);
   const [searchText, setSearchText] = useState("");
-  const [loading, setLoading] = useState(true);
 
-  const handleSearchChange = (event) => {
-    setSearchText(event.target.value.toLowerCase());
-  };
+  const [loading, setLoading] = useState(true);
 
   const handleButtonClick = (buttonText) => {
     switch (buttonText) {
@@ -32,7 +32,7 @@ function App() {
     setCurrentPage(1);
   };
 
-  const handleFilterBySearch = () => {
+  useEffect(() => {
     if (searchText) {
       const filteredBySearch = data.filter((item) =>
         item.projectName.toLowerCase().includes(searchText)
@@ -42,7 +42,7 @@ function App() {
       setFilteredData(data);
     }
     setCurrentPage(1);
-  };
+  }, [searchText]);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -58,44 +58,33 @@ function App() {
   }, 3000);
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto pb-6">
+      <Navbar />
       {loading ? (
         <Loading />
       ) : (
         <div>
-          <div className="flex gap-4 flex-wrap">
-            <button onClick={() => handleButtonClick("Top")}>
-              <Button text="Top" />
-            </button>
-            <button onClick={() => handleButtonClick("Newest")}>
-              <Button text="Newest" />
-            </button>
-            <button onClick={() => handleButtonClick("Reset")}>
-              <Button text="Reset" />
-            </button>
-          </div>
-          <hr className="h-1 mx-auto my-4 bg-blue-500 border-0"></hr>
+          <Slider />
+          <hr className="w-[50%] h-1 mx-auto my-4 bg-blue-500 border-0"></hr>
           <div>
-            <div className="flex gap-4 justify-center mb-5">
+            <div className="flex gap-4 flex-wrap items-center justify-center mb-5">
               <input
                 type="text"
                 placeholder="Search projects..."
-                value={searchText}
-                onChange={handleSearchChange}
+                onChange={(e) => setSearchText(e.target.value)}
                 className="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
               />
-              <button
-                onClick={handleFilterBySearch}
-                className="bg-blue-500 text-white px-3 py-1 rounded-md"
-              >
-                Search
-              </button>
-              <button
-                onClick={() => handleButtonClick("Reset")}
-                className="bg-blue-500 text-white px-3 py-1 rounded-md"
-              >
-                Reset
-              </button>
+              <div className="flex gap-4 flex-wrap">
+                <button onClick={() => handleButtonClick("Top")}>
+                  <Button text="Top" />
+                </button>
+                <button onClick={() => handleButtonClick("Newest")}>
+                  <Button text="Newest" />
+                </button>
+                <button onClick={() => handleButtonClick("Reset")}>
+                  <Button text="Reset" />
+                </button>
+              </div>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
               {currentData.map((el, index) => (
