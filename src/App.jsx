@@ -5,6 +5,7 @@ import data from "./data.json";
 import Loading from "./components/Loading";
 import Slider from "./components/Slider";
 import Navbar from "./components/Navbar";
+import Carousel from "./components/Carousel";
 
 function App() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -58,12 +59,13 @@ function App() {
   }, 3000);
 
   return (
-    <div className="container mx-auto pb-6">
+    <div className="mx-auto pb-6">
       <Navbar />
       {loading ? (
         <Loading />
       ) : (
         <div>
+          <Carousel />
           <Slider />
           <hr className="w-[50%] h-1 mx-auto my-4 bg-blue-500 border-0"></hr>
           <div>
