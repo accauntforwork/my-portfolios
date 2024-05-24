@@ -59,7 +59,7 @@ function App() {
   }, 3000);
 
   return (
-    <div className="mx-auto pb-6">
+    <div className="mx-auto pb-6 max-w-[1600px]">
       <Navbar />
       {loading ? (
         <Loading />
