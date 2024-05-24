@@ -20,7 +20,7 @@ function Navbar() {
           </select>
         </form>
 
-        <a href="" target="_blank">
+        <a href="https://app.enhancv.com/share/21f9b147" target="_blank">
           <Button text="Download CS" />
         </a>
       </div>
