@@ -5,14 +5,12 @@ import arr from "../videoData.json";
 function Slider() {
   return (
     <div className="">
-      <h2 className="text-black font-bold text-xl pl-4 py-6">
-        My lastest videos
-      </h2>
+      <h2 className=" font-bold text-xl pl-4 py-6">My lastest videos</h2>
       <Marquee pauseOnHover="true" className="py-3 overflow-hidden ">
         <div className="flex w-full">
           {arr?.map((vid) => (
             <a
-              className="flex flex-col justify-center items-center pt-1 text-white mr-52 cursor-pointer relative"
+              className="flex flex-col justify-center items-center pt-1 mr-52 cursor-pointer relative"
               key={vid.id}
               href={vid.link}
               target="_blank"
@@ -22,10 +20,17 @@ function Slider() {
                 src={vid.img}
                 alt=""
               />
-              <p className="text-center pt-3 absolute text-black bg-">
-                {vid.title}
-              </p>
-              <p className="text-black"></p>
+              <div className="absolute top-0 left-0 flex gap-0">
+                <p className="text-center bg-slate-500 p-2 bg-opacity-50 rounded-l-lg">
+                  {vid.title}
+                </p>
+                <p className="text-center bg-blue-500 p-2 bg-opacity-50 rounded-r-lg">
+                  {vid.duration}
+                </p>
+              </div>
+              <div className="absolute flex justify-center items-center bg-blue-500 p-2 bg-opacity-50 rounded-md blur-3xl hover:blur-0">
+                {vid.description}
+              </div>
             </a>
           ))}
         </div>
