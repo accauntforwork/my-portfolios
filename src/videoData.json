@@ -24,6 +24,30 @@
     "duration": "22:47"
   },
   {
+    "id": "4",
+    "img": "/flowgorithm.jpg",
+    "link": "https://youtu.be/WErCtOiOSzM?si=G7_q1alRbGhU_QyJ",
+    "title": "4-dars",
+    "description": "Sikl operatorlari: for,while,do-while",
+    "duration": "15:05"
+  },
+  {
+    "id": "5",
+    "img": "/flowgorithm.jpg",
+    "link": "https://youtu.be/tJtUzDQrRfs?si=Z86n6BcOJKNZufUj",
+    "title": "5-dars",
+    "description": "Amaliyot: If shart operatoriga oid masalalar ishlash",
+    "duration": "22:37"
+  },
+  {
+    "id": "6",
+    "img": "/flowgorithm.jpg",
+    "link": "https://youtu.be/e-6aK8ZY8zY?si=C5Be2AKC7D8GzspX",
+    "title": "6-dars",
+    "description": "Amaliyot: For sikl operatoriga oid masalalar ishlash",
+    "duration": "22:29"
+  },
+  {
     "id": "7",
     "img": "/flowgorithm.jpg",
     "link": "https://youtu.be/VZNBjnZyW6s?si=QyEWavnvs69aaMpN",

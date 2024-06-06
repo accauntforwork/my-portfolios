@@ -1,11 +1,17 @@
 [
   {
     "top": true,
-    "projectName": "Intertaiment web App",
+    "projectName": "Crypto-project",
     "imgLink": "/react.png",
-    "githubLink": "https://github.com/accauntforwork/imtihon-final",
-    "liveLink": "https://imtihon-final.vercel.app/",
-    "technologies": ["react", "tailwind", "daisyUI", "javascript"],
+    "githubLink": "https://github.com/accauntforwork/crypto-project",
+    "liveLink": "https://crypto-project-vert.vercel.app/",
+    "technologies": [
+      "react",
+      "tailwind",
+      "redux-toolkit",
+      "react-chartjs-2",
+      "react-fast-marquee"
+    ],
     "newest": true
   },
   {
@@ -15,15 +21,6 @@
     "githubLink": "https://github.com/accauntforwork/mathGame",
     "liveLink": "https://math-game-gray.vercel.app/",
     "technologies": ["javascript", "html", "css"]
-  },
-  {
-    "top": false,
-    "projectName": "Currency exchange",
-    "imgLink": "/react.png",
-    "githubLink": "https://github.com/accauntforwork/currencyFinal",
-    "liveLink": "https://currency-final.vercel.app/",
-    "technologies": ["react", "tailwind", "MUI", "apexchart", "typescript"],
-    "newest": true
   },
   {
     "top": true,
