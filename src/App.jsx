@@ -5,9 +5,11 @@ import data from "./data.json";
 import Loading from "./components/Loading";
 import Slider from "./components/Slider";
 import Navbar from "./components/Navbar";
-import Carousel from "./components/Carousel";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
+
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
 
@@ -65,26 +67,25 @@ function App() {
         <Loading />
       ) : (
         <div>
-          <Carousel />
           <Slider />
           <hr className="w-[50%] h-1 mx-auto my-4 bg-blue-500 border-0"></hr>
           <div>
             <div className="flex gap-4 flex-wrap items-center justify-center mb-5">
               <input
                 type="text"
-                placeholder="Search projects..."
+                placeholder={t("search")}
                 onChange={(e) => setSearchText(e.target.value)}
                 className="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
               />
               <div className="flex gap-4 flex-wrap">
                 <button onClick={() => handleButtonClick("Top")}>
-                  <Button text="Top" />
+                  <Button text={t("top")} />
                 </button>
                 <button onClick={() => handleButtonClick("Newest")}>
-                  <Button text="Newest" />
+                  <Button text={t("newest")} />
                 </button>
                 <button onClick={() => handleButtonClick("Reset")}>
-                  <Button text="Reset" />
+                  <Button text={t("reset")} />
                 </button>
               </div>
             </div>
