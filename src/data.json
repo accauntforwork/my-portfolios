@@ -16,6 +16,15 @@
   },
   {
     "top": true,
+    "projectName": "Namoz vaqti",
+    "imgLink": "/react.png",
+    "githubLink": "https://github.com/accauntforwork/namozVaqti",
+    "liveLink": "https://namoz-vaqti-alpha.vercel.app/",
+    "technologies": ["react", "tailwind"],
+    "newest": true
+  },
+  {
+    "top": true,
     "projectName": "Math game",
     "imgLink": "/js.jpg",
     "githubLink": "https://github.com/accauntforwork/mathGame",
