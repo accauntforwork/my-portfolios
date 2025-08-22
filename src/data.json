@@ -24,7 +24,7 @@
       "react",
       "tailwind",
       "firebase",
-      "firestore",
+      "firestore"
     ],
     "newest": true
   },
